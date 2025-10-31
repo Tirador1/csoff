@@ -752,6 +752,7 @@
         border-radius: 50%;
         animation: wave-expand 2s ease-out infinite;
         pointer-events: none;
+        transform-origin: center center;
       }
 
       @keyframes wave-expand {
@@ -759,11 +760,13 @@
           width: 30px;
           height: 30px;
           opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
         }
         100% {
-          width: 120px;
-          height: 120px;
+          width: 30px;
+          height: 30px;
           opacity: 0;
+          transform: translate(-50%, -50%) scale(4);
         }
       }
 
@@ -1845,17 +1848,19 @@
       }
 
       function createAttackWave(node) {
-        const rect = node.getBoundingClientRect()
         const parent = node.parentElement
-        const parentRect = parent.getBoundingClientRect()
 
         // Create expanding wave
         const wave = document.createElement('div')
         wave.className = 'attack-wave'
-        wave.style.left = node.style.left
-        wave.style.top = node.style.top
-        wave.style.marginLeft = '-15px'
-        wave.style.marginTop = '-15px'
+
+        // Copy the exact position from the node and center the wave
+        const nodeLeft = node.style.left
+        const nodeTop = node.style.top
+
+        wave.style.left = nodeLeft
+        wave.style.top = nodeTop
+        wave.style.transform = 'translate(-50%, -50%)'
 
         parent.appendChild(wave)
 
