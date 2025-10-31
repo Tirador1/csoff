@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CSOFF.com - Cyber Security Operations Front | Premium Domain for Sale
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          #0a0e1a 0%,
+          #1a1f35 50%,
+          #0d1428 100%
+        );
+        color: #e0e6ed;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      /* Animated background particles */
+      .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .particle {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: rgba(0, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: float 20s infinite ease-in-out;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(100px, -100vh) scale(0.5);
+          opacity: 0;
+        }
+      }
+
+      /* Navigation */
+      nav {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 60px;
+        background: rgba(10, 14, 26, 0.6);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #00ffff;
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      }
+
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 18px;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
+
+      .nav-links a {
+        color: #b8c5d6;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: #00ffff;
+      }
+
+      .nav-cta {
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        padding: 10px 24px;
+        border-radius: 24px;
+        color: #0a0e1a !important;
+        font-weight: 600;
+        box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .nav-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 30px rgba(0, 255, 255, 0.5);
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        z-index: 10;
+        padding: 100px 60px;
+        text-align: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      .hero-logo {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        filter: drop-shadow(0 0 40px rgba(0, 255, 255, 0.3));
+        animation: pulse 4s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          filter: drop-shadow(0 0 40px rgba(0, 255, 255, 0.3));
+        }
+        50% {
+          filter: drop-shadow(0 0 60px rgba(0, 255, 255, 0.5));
+        }
+      }
+
+      .hero-text h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        background: linear-gradient(135deg, #ffffff, #00ffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-text p {
+        font-size: 20px;
+        color: #b8c5d6;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        color: #0a0e1a;
+        padding: 18px 40px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3);
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(0, 255, 255, 0.5);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        color: #ffffff;
+        padding: 18px 40px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(0, 255, 255, 0.3);
+        transform: translateY(-3px);
+      }
+
+      .badges {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        background: rgba(0, 255, 255, 0.1);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 13px;
+        color: #00ffff;
+        font-weight: 500;
+      }
+
+      /* Why CSOFF Section */
+      .section {
+        position: relative;
+        z-index: 10;
+        padding: 80px 60px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+        background: linear-gradient(135deg, #ffffff, #00ffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00ffff, transparent);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(0, 255, 255, 0.3);
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0, 255, 255, 0.2);
+      }
+
+      .card:hover::before {
+        opacity: 1;
+      }
+
+      .card-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 255, 255, 0.2),
+          rgba(0, 128, 255, 0.2)
+        );
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin-bottom: 24px;
+        border: 1px solid rgba(0, 255, 255, 0.3);
+      }
+
+      .card h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+        color: #ffffff;
+      }
+
+      .card p {
+        color: #b8c5d6;
+        line-height: 1.6;
+        font-size: 15px;
+      }
+
+      /* Use Cases */
+      .use-cases-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .use-case {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s ease;
+      }
+
+      .use-case:hover {
+        border-color: rgba(0, 255, 255, 0.3);
+        transform: translateY(-3px);
+      }
+
+      .use-case-preview {
+        width: 100%;
+        height: 140px;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 255, 255, 0.05),
+          rgba(0, 128, 255, 0.05)
+        );
+        border-radius: 12px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .preview-tag {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: rgba(0, 128, 255, 0.8);
+        color: white;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .use-case h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #ffffff;
+      }
+
+      .use-case p {
+        font-size: 13px;
+        color: #b8c5d6;
+        line-height: 1.5;
+      }
+
+      /* Console Demo */
+      .console-demo {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 24px;
+        padding: 40px;
+        margin: 60px 0;
+        box-shadow: 0 20px 60px rgba(0, 255, 255, 0.1);
+      }
+
+      .console-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .console-header h3 {
+        font-size: 28px;
+        color: #00ffff;
+      }
+
+      .play-demo {
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        color: #0a0e1a;
+        padding: 12px 28px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .play-demo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 30px rgba(0, 255, 255, 0.4);
+      }
+
+      .console-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      .widgets-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .widget {
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .widget:hover {
+        border-color: rgba(0, 255, 255, 0.5);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+      }
+
+      .widget-small {
+        grid-column: span 1;
+        min-height: 120px;
+      }
+
+      .widget-medium {
+        grid-column: span 2;
+        min-height: 120px;
+      }
+
+      .widget-large {
+        grid-column: span 3;
+        min-height: 160px;
+      }
+
+      .widget-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #00ffff;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .widget-value {
+        font-size: 28px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 8px;
+      }
+
+      .widget-label {
+        font-size: 11px;
+        color: #b8c5d6;
+      }
+
+      .widget-chart {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+        height: 60px;
+        margin-top: 12px;
+      }
+
+      .chart-bar {
+        flex: 1;
+        background: linear-gradient(to top, #00ffff, #0080ff);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        opacity: 0.6;
+      }
+
+      .chart-bar:hover {
+        opacity: 1;
+      }
+
+      .status-indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+        animation: pulse-indicator 2s ease-in-out infinite;
+      }
+
+      .status-ok {
+        background: #00ff88;
+        box-shadow: 0 0 10px #00ff88;
+      }
+
+      .status-warning {
+        background: #ffaa00;
+        box-shadow: 0 0 10px #ffaa00;
+      }
+
+      .status-alert {
+        background: #ff3366;
+        box-shadow: 0 0 10px #ff3366;
+      }
+
+      @keyframes pulse-indicator {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      .activity-log {
+        max-height: 100px;
+        overflow-y: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 11px;
+      }
+
+      .activity-log::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      .activity-log::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+      }
+
+      .activity-log::-webkit-scrollbar-thumb {
+        background: rgba(0, 255, 255, 0.3);
+        border-radius: 2px;
+      }
+
+      .log-entry {
+        color: #b8c5d6;
+        margin-bottom: 4px;
+        opacity: 0;
+        animation: fadeInLog 0.5s forwards;
+      }
+
+      @keyframes fadeInLog {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .terminal {
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        max-height: 320px;
+        overflow-y: auto;
+      }
+
+      .terminal::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .terminal::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .terminal::-webkit-scrollbar-thumb {
+        background: rgba(0, 255, 255, 0.3);
+        border-radius: 3px;
+      }
+
+      .terminal-line {
+        margin-bottom: 8px;
+        color: #00ffff;
+      }
+
+      .terminal-prompt {
+        color: #0080ff;
+      }
+
+      .terminal-cursor {
+        display: inline-block;
+        width: 8px;
+        height: 16px;
+        background: #00ffff;
+        animation: blink 1s infinite;
+        margin-left: 4px;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .threat-map {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        position: relative;
+        height: 280px;
+        overflow: hidden;
+      }
+
+      .threat-map h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #00ffff;
+      }
+
+      .threat-node {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #00ffff;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        animation: pulse-node 2s ease-in-out infinite;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .threat-node:hover {
+        transform: scale(1.8);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+      }
+
+      .threat-node.attack {
+        background: #ff3366;
+        box-shadow: 0 0 30px rgba(255, 51, 102, 1);
+        animation: attack-pulse 1s ease-in-out infinite;
+      }
+
+      .threat-node.warning {
+        background: #ffaa00;
+        box-shadow: 0 0 25px rgba(255, 170, 0, 0.9);
+        animation: warning-pulse 1.5s ease-in-out infinite;
+      }
+
+      .threat-node.secure {
+        background: #00ff88;
+        box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+      }
+
+      @keyframes pulse-node {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.6;
+        }
+      }
+
+      @keyframes attack-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 30px rgba(255, 51, 102, 1);
+        }
+        50% {
+          transform: scale(2);
+          box-shadow: 0 0 50px rgba(255, 51, 102, 1);
+        }
+      }
+
+      @keyframes warning-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.7);
+        }
+      }
+
+      .attack-wave {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #ff3366;
+        border-radius: 50%;
+        animation: wave-expand 2s ease-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes wave-expand {
+        0% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 120px;
+          height: 120px;
+          opacity: 0;
+        }
+      }
+
+      .threat-connection {
+        stroke: rgba(255, 51, 102, 0.6);
+        stroke-width: 2;
+        animation: pulse-line 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-line {
+        0%,
+        100% {
+          stroke-opacity: 0.3;
+          stroke-width: 2;
+        }
+        50% {
+          stroke-opacity: 1;
+          stroke-width: 3;
+        }
+      }
+
+      .node-label {
+        position: absolute;
+        font-size: 10px;
+        color: #00ffff;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 4px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 10;
+      }
+
+      .threat-node:hover + .node-label {
+        opacity: 1;
+      }
+
+      /* Pricing */
+      .pricing-block {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 255, 255, 0.05),
+          rgba(0, 128, 255, 0.05)
+        );
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(0, 255, 255, 0.3);
+        border-radius: 24px;
+        padding: 60px;
+        text-align: center;
+        max-width: 700px;
+        margin: 60px auto;
+        box-shadow: 0 30px 80px rgba(0, 255, 255, 0.2);
+      }
+
+      .price {
+        font-size: 72px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 16px;
+      }
+
+      .pricing-block h3 {
+        font-size: 32px;
+        margin-bottom: 32px;
+        color: #ffffff;
+      }
+
+      .pricing-ctas {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      .trust-text {
+        color: #b8c5d6;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+
+      /* Contact Modal */
+      .contact-modal {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 1000;
+        background: rgba(10, 14, 26, 0.95);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        border-radius: 20px;
+        padding: 32px;
+        width: 380px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        animation: slideIn 0.5s ease;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(500px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+
+      .modal-header h3 {
+        font-size: 20px;
+        color: #00ffff;
+      }
+
+      .close-modal {
+        background: none;
+        border: none;
+        color: #b8c5d6;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .close-modal:hover {
+        color: #ffffff;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #b8c5d6;
+        font-size: 14px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 12px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: inherit;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: rgba(0, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #00ffff, #0080ff);
+        color: #0a0e1a;
+        padding: 14px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0, 255, 255, 0.4);
+      }
+
+      /* Footer */
+      footer {
+        position: relative;
+        z-index: 10;
+        background: rgba(10, 14, 26, 0.8);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(0, 255, 255, 0.1);
+        padding: 40px 60px;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-text {
+        color: #b8c5d6;
+        font-size: 14px;
+      }
+
+      .footer-email {
+        color: #00ffff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+
+      .footer-email:hover {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 16px;
+      }
+
+      .social-icon {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b8c5d6;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+
+      .social-icon:hover {
+        background: rgba(0, 255, 255, 0.1);
+        border-color: rgba(0, 255, 255, 0.3);
+        color: #00ffff;
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 1200px) {
+        .hero-content {
+          grid-template-columns: 1fr;
+        }
+
+        .cards-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .use-cases-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .console-content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Animated particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <div class="logo-mark">CS</div>
+        CSOFF.com
+      </div>
+      <div class="nav-links">
+        <a href="#why">Why CSOFF</a>
+        <a href="#usecases">Use Cases</a>
+        <a href="#acquire">Acquire</a>
+        <a
+          href="https://sedo.com/search/?keyword=csoff.com"
+          target="_blank"
+          class="nav-cta"
+          >Buy on Sedo</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <svg
+            class="hero-logo"
+            viewBox="0 0 1536 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Shield outline -->
+            <path
+              d="M768 50 L1400 250 L1400 600 Q1400 850 768 974 Q136 850 136 600 L136 250 Z"
+              fill="none"
+              stroke="url(#grad1)"
+              stroke-width="8"
+              opacity="0.3"
+            />
+
+            <!-- Inner shield -->
+            <path
+              d="M768 120 L1300 290 L1300 580 Q1300 790 768 890 Q236 790 236 580 L236 290 Z"
+              fill="url(#grad2)"
+              opacity="0.1"
+            />
+
+            <!-- CS text -->
+            <text
+              x="768"
+              y="480"
+              font-size="280"
+              font-weight="900"
+              fill="url(#textGrad)"
+              text-anchor="middle"
+              font-family="Arial, sans-serif"
+            >
+              CS
+            </text>
+
+            <!-- Circuit lines -->
+            <line
+              x1="300"
+              y1="400"
+              x2="500"
+              y2="400"
+              stroke="#00ffff"
+              stroke-width="3"
+              opacity="0.5"
+            >
+              <animate
+                attributeName="opacity"
+                values="0.5;1;0.5"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </line>
+            <circle cx="500" cy="400" r="8" fill="#00ffff" opacity="0.8" />
+
+            <line
+              x1="1036"
+              y1="400"
+              x2="1236"
+              y2="400"
+              stroke="#00ffff"
+              stroke-width="3"
+              opacity="0.5"
+            >
+              <animate
+                attributeName="opacity"
+                values="0.5;1;0.5"
+                dur="2s"
+                begin="0.5s"
+                repeatCount="indefinite"
+              />
+            </line>
+            <circle cx="1036" cy="400" r="8" fill="#00ffff" opacity="0.8" />
+
+            <!-- Bottom accent -->
+            <path
+              d="M600 700 L768 750 L936 700"
+              stroke="#0080ff"
+              stroke-width="4"
+              fill="none"
+              opacity="0.6"
+            />
+
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #00ffff; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #0080ff; stop-opacity: 1"
+                />
+              </linearGradient>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #00ffff; stop-opacity: 0.3"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #0080ff; stop-opacity: 0.1"
+                />
+              </linearGradient>
+              <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #00ffff; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #0080ff; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="hero-text">
+          <h1>CSOFF — Cyber Security Operations Front</h1>
+          <p>
+            Brand-ready .com for SOC platforms, security consoles, and
+            enterprise protection. The perfect domain for your security
+            operations center.
+          </p>
+          <div class="hero-ctas">
+            <a
+              href="https://sedo.com/search/?keyword=csoff.com"
+              target="_blank"
+              class="btn-primary"
+              >Buy on Sedo — $588</a
+            >
+            <a href="mailto:ahmad0abdulmajid@gmail.com" class="btn-secondary"
+              >Contact Owner</a
+            >
+          </div>
+          <div class="badges">
+            <span class="badge">Short .com</span>
+            <span class="badge">Premium</span>
+            <span class="badge">5 Letters</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CSOFF -->
+    <section class="section" id="why">
+      <h2 class="section-title">Why CSOFF</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>SOC-Ready Identity</h3>
+          <p>
+            Perfect acronym for Security Operations Center solutions. Instantly
+            communicates protection and operational readiness to enterprise
+            clients.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Enterprise Trust & Recall</h3>
+          <p>
+            Short, memorable, and professional. CSOFF.com conveys authority and
+            credibility for cybersecurity products and services.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>Premium .com Value</h3>
+          <p>
+            Five-letter .com domains are rare and valuable. CSOFF offers
+            exceptional brandability and long-term investment potential.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section" id="usecases">
+      <h2 class="section-title">Perfect For</h2>
+      <div class="use-cases-grid">
+        <div class="use-case">
+          <div class="use-case-preview">
+            📊
+            <span class="preview-tag">Preview</span>
+          </div>
+          <h4>SOC Dashboard</h4>
+          <p>
+            Real-time security operations monitoring and threat intelligence
+            platform.
+          </p>
+        </div>
+        <div class="use-case">
+          <div class="use-case-preview">
+            🖥️
+            <span class="preview-tag">Preview</span>
+          </div>
+          <h4>Enterprise Console</h4>
+          <p>
+            Centralized command center for managing cybersecurity infrastructure
+            at scale.
+          </p>
+        </div>
+        <div class="use-case">
+          <div class="use-case-preview">
+            🔍
+            <span class="preview-tag">Preview</span>
+          </div>
+          <h4>Threat Intel Portal</h4>
+          <p>
+            Advanced threat detection, analysis, and response coordination
+            platform.
+          </p>
+        </div>
+        <div class="use-case">
+          <div class="use-case-preview">
+            🛒
+            <span class="preview-tag">Preview</span>
+          </div>
+          <h4>Security Marketplace</h4>
+          <p>
+            Platform for cybersecurity tools, services, and professional
+            resources.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Demo Console -->
+    <section class="section">
+      <div class="console-demo">
+        <div class="console-header">
+          <h3>Interactive Demo: Security Operations</h3>
+          <button class="play-demo">▶ Play Demo</button>
+        </div>
+        <div class="console-content">
+          <div class="terminal" id="terminal">
+            <div class="terminal-line">
+              <span class="terminal-prompt">root@csoff:~$</span> cs-off --scan
+              --domain csoff.com
+            </div>
+            <div class="terminal-line">[✓] Initializing security scan...</div>
+            <div class="terminal-line">[✓] Domain verified: csoff.com</div>
+            <div class="terminal-line">[✓] SSL/TLS: A+ rating</div>
+            <div class="terminal-line">[✓] Firewall status: ACTIVE</div>
+            <div class="terminal-line">[✓] DDoS protection: ENABLED</div>
+            <div class="terminal-line">[✓] Threat level: SECURE</div>
+            <div class="terminal-line" style="margin-top: 16px">
+              <span class="terminal-prompt">root@csoff:~$</span> cs-off
+              --monitor --threats
+            </div>
+            <div class="terminal-line">[!] Monitoring 247 endpoints...</div>
+            <div class="terminal-line">[!] Active threats: 0</div>
+            <div class="terminal-line">[✓] All systems operational</div>
+            <div class="terminal-line" style="margin-top: 16px">
+              <span class="terminal-prompt">root@csoff:~$</span
+              ><span class="terminal-cursor"></span>
+            </div>
+          </div>
+          <div class="threat-map" id="threat-map">
+            <h4>Global Threat Map</h4>
+            <div
+              class="threat-node"
+              data-node="US-East"
+              style="left: 20%; top: 30%"
+            ></div>
+            <div class="node-label" style="left: 20%; top: 25%">US-East</div>
+
+            <div
+              class="threat-node"
+              data-node="EU-Central"
+              style="left: 45%; top: 50%; animation-delay: 0.5s"
+            ></div>
+            <div class="node-label" style="left: 45%; top: 45%">EU-Central</div>
+
+            <div
+              class="threat-node"
+              data-node="Asia-Pacific"
+              style="left: 70%; top: 35%; animation-delay: 1s"
+            ></div>
+            <div class="node-label" style="left: 70%; top: 30%">
+              Asia-Pacific
+            </div>
+
+            <div
+              class="threat-node"
+              data-node="US-West"
+              style="left: 30%; top: 70%; animation-delay: 1.5s"
+            ></div>
+            <div class="node-label" style="left: 30%; top: 65%">US-West</div>
+
+            <div
+              class="threat-node"
+              data-node="Middle-East"
+              style="left: 80%; top: 65%; animation-delay: 0.7s"
+            ></div>
+            <div class="node-label" style="left: 80%; top: 60%">
+              Middle-East
+            </div>
+
+            <div
+              class="threat-node"
+              data-node="South-America"
+              style="left: 55%; top: 80%; animation-delay: 1.2s"
+            ></div>
+            <div class="node-label" style="left: 55%; top: 75%">
+              South-America
+            </div>
+
+            <svg
+              id="threat-map-svg"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+              "
+            >
+              <line
+                class="map-connection"
+                x1="20%"
+                y1="30%"
+                x2="45%"
+                y2="50%"
+                stroke="rgba(0,255,255,0.2)"
+                stroke-width="1"
+              />
+              <line
+                class="map-connection"
+                x1="45%"
+                y1="50%"
+                x2="70%"
+                y2="35%"
+                stroke="rgba(0,255,255,0.2)"
+                stroke-width="1"
+              />
+              <line
+                class="map-connection"
+                x1="70%"
+                y1="35%"
+                x2="80%"
+                y2="65%"
+                stroke="rgba(0,255,255,0.2)"
+                stroke-width="1"
+              />
+              <line
+                class="map-connection"
+                x1="30%"
+                y1="70%"
+                x2="55%"
+                y2="80%"
+                stroke="rgba(0,255,255,0.2)"
+                stroke-width="1"
+              />
+            </svg>
+            <div
+              id="map-status"
+              style="
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+                font-size: 12px;
+                color: #00ffff;
+              "
+            >
+              <div id="monitored-nodes">Monitored Nodes: 6</div>
+              <div id="map-status-text">Status: All Clear ✓</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Widgets -->
+        <div class="widgets-grid">
+          <!-- Small Widget: Threat Level -->
+          <div class="widget widget-small">
+            <div class="widget-title">Threat Level</div>
+            <div class="widget-value" id="threat-level">LOW</div>
+            <div class="widget-label">
+              <span class="status-indicator status-ok"></span>Secure
+            </div>
+          </div>
+
+          <!-- Small Widget: Active Sessions -->
+          <div class="widget widget-small">
+            <div class="widget-title">Active Sessions</div>
+            <div class="widget-value" id="active-sessions">247</div>
+            <div class="widget-label">Connected endpoints</div>
+          </div>
+
+          <!-- Small Widget: Response Time -->
+          <div class="widget widget-small">
+            <div class="widget-title">Avg Response</div>
+            <div class="widget-value" id="response-time">12ms</div>
+            <div class="widget-label">System latency</div>
+          </div>
+
+          <!-- Small Widget: CPU Usage -->
+          <div class="widget widget-small">
+            <div class="widget-title">CPU Load</div>
+            <div class="widget-value" id="cpu-usage">34%</div>
+            <div class="widget-label">
+              <span class="status-indicator status-ok"></span>Normal
+            </div>
+          </div>
+
+          <!-- Medium Widget: Bandwidth Monitor -->
+          <div class="widget widget-medium">
+            <div class="widget-title">Network Bandwidth</div>
+            <div class="widget-value" id="bandwidth">2.4 GB/s</div>
+            <div class="widget-chart" id="bandwidth-chart">
+              <div class="chart-bar" style="height: 40%"></div>
+              <div class="chart-bar" style="height: 65%"></div>
+              <div class="chart-bar" style="height: 45%"></div>
+              <div class="chart-bar" style="height: 80%"></div>
+              <div class="chart-bar" style="height: 55%"></div>
+              <div class="chart-bar" style="height: 70%"></div>
+              <div class="chart-bar" style="height: 60%"></div>
+              <div class="chart-bar" style="height: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Medium Widget: Blocked Threats -->
+          <div class="widget widget-medium">
+            <div class="widget-title">Blocked Threats (24h)</div>
+            <div class="widget-value" id="blocked-threats">1,247</div>
+            <div class="widget-label">
+              <span class="status-indicator status-warning"></span>
+              +12% from yesterday
+            </div>
+          </div>
+
+          <!-- Large Widget: Activity Log -->
+          <div class="widget widget-large">
+            <div class="widget-title">Recent Activity</div>
+            <div class="activity-log" id="activity-log">
+              <div class="log-entry">
+                [14:32:15] Firewall rule updated: Block IP 192.168.1.100
+              </div>
+              <div class="log-entry">
+                [14:31:42] DDoS attempt detected and mitigated
+              </div>
+              <div class="log-entry">
+                [14:30:18] SSL certificate renewed: csoff.com
+              </div>
+              <div class="log-entry">
+                [14:29:55] Backup completed: 250GB transferred
+              </div>
+              <div class="log-entry">
+                [14:28:33] User authentication successful: admin@csoff.com
+              </div>
+            </div>
+          </div>
+
+          <!-- Small Widget: Uptime -->
+          <div class="widget widget-small">
+            <div class="widget-title">System Uptime</div>
+            <div class="widget-value" id="uptime">99.9%</div>
+            <div class="widget-label">Last 30 days</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Acquisition -->
+    <section class="section" id="acquire">
+      <div class="pricing-block">
+        <h3>Own CSOFF.com</h3>
+        <div class="price">$588</div>
+        <div class="pricing-ctas">
+          <a
+            href="https://sedo.com/search/?keyword=csoff.com"
+            target="_blank"
+            class="btn-primary"
+          >
+            Buy on Sedo
+          </a>
+          <a
+            href="mailto:ahmad0abdulmajid@gmail.com?subject=CSOFF.com Domain Inquiry"
+            class="btn-secondary"
+          >
+            Email Owner
+          </a>
+        </div>
+        <p class="trust-text">
+          Secure transaction via Sedo marketplace or contact owner directly for
+          negotiation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Modal (floating) -->
+    <div class="contact-modal">
+      <div class="modal-header">
+        <h3>Contact Owner</h3>
+        <button class="close-modal">×</button>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            placeholder="I'm interested in purchasing CSOFF.com..."
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          © 2025 CSOFF.com — Premium domain for security & cloud
+        </div>
+        <a href="mailto:ahmad0abdulmajid@gmail.com" class="footer-email"
+          >ahmad0abdulmajid@gmail.com</a
+        >
+        <div class="social-icons">
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">⧉</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Generate animated particles
+      const particlesContainer = document.getElementById('particles')
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div')
+        particle.className = 'particle'
+        particle.style.left = Math.random() * 100 + '%'
+        particle.style.top = Math.random() * 100 + '%'
+        particle.style.animationDelay = Math.random() * 20 + 's'
+        particle.style.animationDuration = 15 + Math.random() * 10 + 's'
+        particlesContainer.appendChild(particle)
+      }
+
+      // Close modal functionality
+      document
+        .querySelector('.close-modal')
+        .addEventListener('click', function () {
+          document.querySelector('.contact-modal').style.display = 'none'
+        })
+
+      // Form submission
+      document
+        .querySelector('.contact-modal form')
+        .addEventListener('submit', function (e) {
+          e.preventDefault()
+          const name = document.getElementById('name').value
+          const email = document.getElementById('email').value
+          const message = document.getElementById('message').value
+
+          window.location.href = `mailto:ahmad0abdulmajid@gmail.com?subject=CSOFF.com Domain Inquiry from ${name}&body=${encodeURIComponent(
+            message + '\n\nFrom: ' + email
+          )}`
+        })
+
+      // Play demo button interaction
+      let demoRunning = false
+      let demoInterval = null
+
+      document
+        .querySelector('.play-demo')
+        .addEventListener('click', function () {
+          if (demoRunning) {
+            // Stop demo
+            demoRunning = false
+            this.textContent = '▶ Play Demo'
+            if (demoInterval) {
+              clearInterval(demoInterval)
+              demoInterval = null
+            }
+          } else {
+            // Start demo
+            demoRunning = true
+            this.textContent = '⏸ Stop Demo'
+            runSecurityDemo()
+          }
+        })
+
+      function runSecurityDemo() {
+        let iteration = 0
+        const terminal = document.getElementById('terminal')
+        const activityLog = document.getElementById('activity-log')
+
+        // Terminal commands to simulate
+        const commands = [
+          {
+            cmd: 'cs-off --detect-intrusion',
+            responses: [
+              '[!] Scanning for intrusions...',
+              '[✓] No intrusions detected',
+              '[✓] All ports secure',
+            ],
+          },
+          {
+            cmd: 'cs-off --update-firewall',
+            responses: [
+              '[!] Updating firewall rules...',
+              '[✓] 47 rules updated',
+              '[✓] Firewall optimized',
+            ],
+          },
+          {
+            cmd: 'cs-off --scan-vulnerabilities',
+            responses: [
+              '[!] Vulnerability scan initiated...',
+              '[✓] 0 critical vulnerabilities',
+              '[✓] System hardened',
+            ],
+          },
+          {
+            cmd: 'cs-off --analyze-traffic',
+            responses: [
+              '[!] Analyzing network traffic...',
+              '[✓] Traffic patterns normal',
+              '[✓] No anomalies detected',
+            ],
+          },
+        ]
+
+        // Activity log messages
+        const activities = [
+          'Authentication attempt from 203.0.113.42 - BLOCKED',
+          'Malware signature detected and quarantined',
+          'Port scan detected from 198.51.100.17 - MITIGATED',
+          'SSL handshake completed: api.csoff.com',
+          'Intrusion prevention system updated',
+          'New security policy applied: enforce-2FA',
+          'Suspicious file upload blocked: malware.exe',
+          'Rate limiting activated on endpoint /api/login',
+          'Geo-blocking enabled for high-risk regions',
+          'Security audit completed: PASSED',
+        ]
+
+        demoInterval = setInterval(() => {
+          if (!demoRunning) return
+
+          // Update terminal with new command
+          const cmdIndex = iteration % commands.length
+          const command = commands[cmdIndex]
+
+          // Add new command to terminal
+          const newLine = document.createElement('div')
+          newLine.className = 'terminal-line'
+          newLine.style.marginTop = '16px'
+          newLine.innerHTML = `<span class="terminal-prompt">root@csoff:~$</span> ${command.cmd}`
+
+          // Remove cursor
+          const cursor = terminal.querySelector('.terminal-cursor')
+          if (cursor) cursor.remove()
+
+          terminal.appendChild(newLine)
+
+          // Add responses
+          command.responses.forEach((response, idx) => {
+            setTimeout(() => {
+              const responseLine = document.createElement('div')
+              responseLine.className = 'terminal-line'
+              responseLine.textContent = response
+              terminal.appendChild(responseLine)
+
+              // Add cursor back on last response
+              if (idx === command.responses.length - 1) {
+                const cursorLine = document.createElement('div')
+                cursorLine.className = 'terminal-line'
+                cursorLine.style.marginTop = '16px'
+                cursorLine.innerHTML =
+                  '<span class="terminal-prompt">root@csoff:~$</span><span class="terminal-cursor"></span>'
+                terminal.appendChild(cursorLine)
+              }
+
+              // Auto-scroll terminal
+              terminal.scrollTop = terminal.scrollHeight
+            }, (idx + 1) * 400)
+          })
+
+          // Update metrics with random realistic values
+          updateMetrics()
+
+          // Animate threat map
+          animateThreatMap()
+
+          // Add activity log entry
+          addActivityLog(
+            activities[Math.floor(Math.random() * activities.length)]
+          )
+
+          iteration++
+        }, 4000)
+      }
+
+      function animateThreatMap() {
+        const threatNodes = document.querySelectorAll('.threat-node')
+        const mapStatus = document.getElementById('map-status-text')
+        const connections = document.querySelectorAll('.map-connection')
+
+        // Random threat scenarios
+        const scenarios = [
+          { type: 'secure', status: 'Status: All Clear ✓', color: '#00ff88' },
+          {
+            type: 'warning',
+            status: 'Status: Minor Threats Detected ⚠',
+            color: '#ffaa00',
+          },
+          {
+            type: 'attack',
+            status: 'Status: UNDER ATTACK! 🚨',
+            color: '#ff3366',
+          },
+        ]
+
+        const scenario = scenarios[Math.floor(Math.random() * scenarios.length)]
+
+        // Update map status
+        if (mapStatus) {
+          mapStatus.textContent = scenario.status
+          mapStatus.style.color = scenario.color
+        }
+
+        // Update nodes based on scenario
+        threatNodes.forEach((node, index) => {
+          // Remove all state classes
+          node.classList.remove('attack', 'warning', 'secure')
+
+          if (scenario.type === 'attack') {
+            // Randomly select 1-2 nodes to be under attack
+            if (Math.random() > 0.6) {
+              node.classList.add('attack')
+              createAttackWave(node)
+
+              // Log specific attack
+              const nodeName = node.getAttribute('data-node')
+              setTimeout(() => {
+                addActivityLog(
+                  `[ALERT] DDoS attack detected on ${nodeName} node`
+                )
+              }, 500)
+            } else if (Math.random() > 0.5) {
+              node.classList.add('warning')
+            } else {
+              node.classList.add('secure')
+            }
+          } else if (scenario.type === 'warning') {
+            // Some nodes warning, most secure
+            if (Math.random() > 0.7) {
+              node.classList.add('warning')
+            } else {
+              node.classList.add('secure')
+            }
+          } else {
+            // All secure
+            node.classList.add('secure')
+          }
+        })
+
+        // Animate connections based on threat level
+        connections.forEach((line) => {
+          if (scenario.type === 'attack') {
+            line.classList.add('threat-connection')
+            line.setAttribute('stroke', 'rgba(255, 51, 102, 0.6)')
+          } else if (scenario.type === 'warning') {
+            line.setAttribute('stroke', 'rgba(255, 170, 0, 0.4)')
+          } else {
+            line.classList.remove('threat-connection')
+            line.setAttribute('stroke', 'rgba(0, 255, 255, 0.2)')
+          }
+        })
+      }
+
+      function createAttackWave(node) {
+        const rect = node.getBoundingClientRect()
+        const parent = node.parentElement
+        const parentRect = parent.getBoundingClientRect()
+
+        // Create expanding wave
+        const wave = document.createElement('div')
+        wave.className = 'attack-wave'
+        wave.style.left = node.style.left
+        wave.style.top = node.style.top
+        wave.style.marginLeft = '-15px'
+        wave.style.marginTop = '-15px'
+
+        parent.appendChild(wave)
+
+        // Remove wave after animation
+        setTimeout(() => {
+          if (wave.parentElement) {
+            wave.parentElement.removeChild(wave)
+          }
+        }, 2000)
+      }
+
+      function updateMetrics() {
+        // Update threat level randomly
+        const threatLevels = ['LOW', 'MEDIUM', 'HIGH']
+        const threatLevel = threatLevels[Math.floor(Math.random() * 3)]
+        const threatElement = document.getElementById('threat-level')
+        if (threatElement) {
+          threatElement.textContent = threatLevel
+          threatElement.style.color =
+            threatLevel === 'LOW'
+              ? '#00ff88'
+              : threatLevel === 'MEDIUM'
+              ? '#ffaa00'
+              : '#ff3366'
+        }
+
+        // Update active sessions (247 +/- 20)
+        const sessions = 247 + Math.floor(Math.random() * 40) - 20
+        const sessionsElement = document.getElementById('active-sessions')
+        if (sessionsElement) sessionsElement.textContent = sessions
+
+        // Update response time (10-20ms)
+        const responseTime = (10 + Math.random() * 10).toFixed(0)
+        const responseElement = document.getElementById('response-time')
+        if (responseElement) responseElement.textContent = responseTime + 'ms'
+
+        // Update CPU usage (20-60%)
+        const cpuUsage = (20 + Math.random() * 40).toFixed(0)
+        const cpuElement = document.getElementById('cpu-usage')
+        if (cpuElement) cpuElement.textContent = cpuUsage + '%'
+
+        // Update bandwidth (1.5-3.5 GB/s)
+        const bandwidth = (1.5 + Math.random() * 2).toFixed(1)
+        const bandwidthElement = document.getElementById('bandwidth')
+        if (bandwidthElement) bandwidthElement.textContent = bandwidth + ' GB/s'
+
+        // Animate bandwidth chart
+        const chartBars = document.querySelectorAll(
+          '#bandwidth-chart .chart-bar'
+        )
+        chartBars.forEach((bar) => {
+          const newHeight = (30 + Math.random() * 60).toFixed(0) + '%'
+          bar.style.height = newHeight
+        })
+
+        // Update blocked threats (increasing)
+        const blockedElement = document.getElementById('blocked-threats')
+        if (blockedElement) {
+          const current = parseInt(blockedElement.textContent.replace(/,/g, ''))
+          const newValue = current + Math.floor(Math.random() * 10)
+          blockedElement.textContent = newValue.toLocaleString()
+        }
+      }
+
+      function addActivityLog(message) {
+        const activityLog = document.getElementById('activity-log')
+        if (!activityLog) return
+
+        const now = new Date()
+        const timestamp = now.toTimeString().split(' ')[0]
+
+        const logEntry = document.createElement('div')
+        logEntry.className = 'log-entry'
+        logEntry.textContent = `[${timestamp}] ${message}`
+
+        activityLog.insertBefore(logEntry, activityLog.firstChild)
+
+        // Keep only last 10 entries
+        while (activityLog.children.length > 10) {
+          activityLog.removeChild(activityLog.lastChild)
+        }
+      }
+
+      // Add click handlers to threat nodes
+      document.querySelectorAll('.threat-node').forEach((node) => {
+        node.addEventListener('click', function () {
+          const nodeName = this.getAttribute('data-node')
+          const hasAttack = this.classList.contains('attack')
+          const hasWarning = this.classList.contains('warning')
+
+          let message = ''
+          if (hasAttack) {
+            message = `[MANUAL CHECK] ${nodeName}: Active attack detected - Initiating countermeasures`
+            this.classList.remove('attack')
+            this.classList.add('secure')
+            setTimeout(() => {
+              addActivityLog(
+                `[RESOLVED] ${nodeName}: Threat neutralized, systems restored`
+              )
+            }, 1000)
+          } else if (hasWarning) {
+            message = `[MANUAL CHECK] ${nodeName}: Investigating suspicious activity`
+            this.classList.remove('warning')
+            this.classList.add('secure')
+          } else {
+            message = `[INFO] ${nodeName}: All systems operational, 0 threats detected`
+          }
+
+          addActivityLog(message)
+        })
+      })
+
+      // Smooth scrolling for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            })
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
