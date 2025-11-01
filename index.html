@@ -1022,21 +1022,292 @@
         transform: translateY(-3px);
       }
 
+      /* Responsive Design */
       @media (max-width: 1200px) {
+        nav {
+          padding: 20px 40px;
+        }
+
+        .hero,
+        .section {
+          padding: 60px 40px;
+        }
+
         .hero-content {
           grid-template-columns: 1fr;
+          gap: 40px;
         }
 
         .cards-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
         }
 
         .use-cases-grid {
           grid-template-columns: repeat(2, 1fr);
+          gap: 24px;
         }
 
         .console-content {
           grid-template-columns: 1fr;
+        }
+
+        .widgets-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .widget-large {
+          grid-column: span 3;
+        }
+
+        .widget-medium {
+          grid-column: span 3;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          padding: 16px 24px;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .logo {
+          font-size: 20px;
+        }
+
+        .logo-mark {
+          width: 36px;
+          height: 36px;
+          font-size: 16px;
+        }
+
+        .nav-links {
+          gap: 16px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .nav-links a {
+          font-size: 13px;
+        }
+
+        .nav-cta {
+          padding: 8px 20px;
+          font-size: 13px;
+        }
+
+        .hero,
+        .section {
+          padding: 40px 24px;
+        }
+
+        .hero-text h1 {
+          font-size: 36px;
+        }
+
+        .hero-text p {
+          font-size: 16px;
+        }
+
+        .hero-ctas {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          padding: 14px 32px;
+          font-size: 14px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .section-title {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+
+        .cards-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .card {
+          padding: 32px;
+        }
+
+        .use-cases-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .console-demo {
+          padding: 24px;
+          margin: 40px 0;
+        }
+
+        .console-header {
+          flex-direction: column;
+          gap: 16px;
+          align-items: flex-start;
+        }
+
+        .console-header h3 {
+          font-size: 22px;
+        }
+
+        .play-demo {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .console-content {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .terminal {
+          font-size: 12px;
+          padding: 16px;
+          max-height: 250px;
+        }
+
+        .threat-map {
+          height: 220px;
+          padding: 16px;
+        }
+
+        .threat-map h4 {
+          font-size: 14px;
+        }
+
+        .widgets-grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .widget-small,
+        .widget-medium,
+        .widget-large {
+          grid-column: span 1;
+        }
+
+        .widget {
+          padding: 16px;
+        }
+
+        .widget-title {
+          font-size: 11px;
+        }
+
+        .widget-value {
+          font-size: 24px;
+        }
+
+        .pricing-block {
+          padding: 40px 24px;
+          margin: 40px auto;
+        }
+
+        .price {
+          font-size: 56px;
+        }
+
+        .pricing-block h3 {
+          font-size: 26px;
+        }
+
+        .pricing-ctas {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .contact-modal {
+          right: 20px;
+          bottom: 20px;
+          left: 20px;
+          width: auto;
+          padding: 24px;
+        }
+
+        .contact-modal h3 {
+          font-size: 20px;
+        }
+
+        footer {
+          padding: 32px 24px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-text h1 {
+          font-size: 28px;
+        }
+
+        .hero-text p {
+          font-size: 14px;
+        }
+
+        .section-title {
+          font-size: 26px;
+        }
+
+        .card {
+          padding: 24px;
+        }
+
+        .card-icon {
+          font-size: 36px;
+        }
+
+        .card h3 {
+          font-size: 18px;
+        }
+
+        .card p {
+          font-size: 13px;
+        }
+
+        .console-header h3 {
+          font-size: 18px;
+        }
+
+        .terminal {
+          font-size: 11px;
+          padding: 12px;
+        }
+
+        .threat-map {
+          height: 180px;
+        }
+
+        .threat-node {
+          width: 10px;
+          height: 10px;
+        }
+
+        .price {
+          font-size: 48px;
+        }
+
+        .pricing-block h3 {
+          font-size: 22px;
+        }
+
+        .badges {
+          gap: 8px;
+        }
+
+        .badge {
+          padding: 6px 12px;
+          font-size: 11px;
         }
       }
     </style>
